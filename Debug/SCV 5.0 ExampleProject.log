@@ -1,5 +1,65 @@
-﻿Build started 02/05/2015 21:21:04.
+﻿Build started 02/05/2015 21:39:56.
+     1>Project "E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\SCV 5.0 ExampleProject.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IE:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\Application.cpp src\Controller.cpp src\main.cpp src\Widget.cpp
+         Widget.cpp
+         main.cpp
+         Controller.cpp
+         Application.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\\Debug\SCV 5.0 ExampleProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\lib glu32.lib opengl32.lib scv5d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\\Debug\SCV 5.0 ExampleProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\\Debug\SCV 5.0 ExampleProject.lib" /MACHINE:X86 Debug\Application.obj
+         Debug\Controller.obj
+         Debug\main.obj
+         Debug\Widget.obj
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>scv5d.lib(Button.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(ButtonGroup.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Canvas.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(CheckBox.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Color4f.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(ColorRGBA.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(ColorScheme.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Component.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(ComponentSpring.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(ComponentTexture.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(ContextMenu.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Cursor.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(CheckBoxData.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(FontTahoma.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(GapSpring.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(GlslShader.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Group.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(GroupLayout.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(InternalFrameHolder.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Kernel.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Keyboard.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(KeyEvent.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Label.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(MenuHolder.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(MouseEvent.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Panel.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(ParallelGroup.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Point.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(PopupMenuStyle.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Scissor.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Separator.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(SequentialGroup.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Spring.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(StateButton.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(StaticLabel.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(TextBox.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(TextField.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(TextFilter.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Texture2D.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(Timer.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(util.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(VistaMenuStyle.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>scv5d.lib(glew.obj) : warning LNK4204: 'E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+         SCV 5.0 ExampleProject.vcxproj -> E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\\Debug\SCV 5.0 ExampleProject.exe
+     1>Done Building Project "E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\SCV 5.0 ExampleProject.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.01
+Time Elapsed 00:00:04.70
