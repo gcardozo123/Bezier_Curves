@@ -1,17 +1,5 @@
-﻿Build started 03/05/2015 00:47:30.
-     1>Project "E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\SCV 5.0 ExampleProject.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IE:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\Widget.cpp
-         Widget.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\\Debug\SCV_Bezier_Curves.exe" /INCREMENTAL /NOLOGO /LIBPATH:E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\lib glu32.lib opengl32.lib scv5d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\\Debug\SCV_Bezier_Curves.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\\Debug\SCV_Bezier_Curves.lib" /MACHINE:X86 Debug\Application.obj
-         Debug\BezierCurve.obj
-         Debug\Controller.obj
-         Debug\main.obj
-         Debug\Widget.obj
-         SCV 5.0 ExampleProject.vcxproj -> E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\\Debug\SCV_Bezier_Curves.exe
-     1>Done Building Project "E:\Documents\7Semestre\MonitoriaCG\T2\Bezier_Curves\SCV 5.0 ExampleProject.vcxproj" (Build target(s)).
+﻿Build started 03/05/2015 12:47:48.
 
 Build succeeded.
 
-Time Elapsed 00:00:01.26
+Time Elapsed 00:00:00.01

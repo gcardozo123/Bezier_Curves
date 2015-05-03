@@ -15,15 +15,16 @@ BezierCurve::~BezierCurve()
 
 vec2 BezierCurve::cubicBezier(vec2 p0, vec2 p1, vec2 p2, vec2 p3, float t){
 	vec2 pFinal(.0f, .0f);
-	pFinal.x = pow((1 - t), 3) * p0.x + 
-			   3 * pow((1 - t), 2) * p1.x + 
-			   3 * (1 - t) * t * t * p2.x + 
-			   t * t * t * p3.x;
-	
-	pFinal.y = pow((1 - t), 3) * p0.y +
-		3 * pow((1 - t), 2) * p1.y +
-		3 * (1 - t) * t * t * p2.y +
-		t * t * t * p3.y;
+	float u = 1 - t;
+	float tt = t*t;
+	float uu = u*u;
+	float uuu = uu * u;
+	float ttt = tt * t;
+
+	pFinal =	uuu * p0;
+	pFinal += 3 * uu * t * p1;
+	pFinal += 3 * u * tt * p2;
+	pFinal += ttt * p3;
 
 	return pFinal;
 }

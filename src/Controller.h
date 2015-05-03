@@ -2,6 +2,8 @@
 #include <glm\vec2.hpp>
 #include <vector>
 
+#define SEGMENTS 100;
+
 class Canvas0;
 class CheckBoxControlPoints;
 class CheckBoxL1;
@@ -10,6 +12,7 @@ class CheckBoxL3;
 class ButtonAnimate;
 class TextField0;
 class ButtonClear;
+class BezierCurve;
 
 class Controller
 {
@@ -30,7 +33,7 @@ public:
 	void canvasOnMouseClick(float x, float y);
 	void buttonClearPressed();
 	void drawControlGraph();
-	
+	void drawBezierCurve();
 
 private:
 	Canvas0 *canvas0;
@@ -42,7 +45,7 @@ private:
 	TextField0 *textField0;
 	ButtonClear *buttonClear;
 
-	std::vector<glm::vec2> controlPoints;
+	BezierCurve *bezierObj;
 
 };
 

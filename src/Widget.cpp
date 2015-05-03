@@ -28,10 +28,13 @@ void Canvas0::onSizeChange(void) {
 void Canvas0::onPositionChange(void) {
 }
 void Canvas0::render(void) {
-	color(.0f, .0f, .0f);
-	controller->drawControlGraph();
-	// line(scv::Point(0, 0), scv::Point(500, 500));
+	clear(0.5f, 0.5f, 0.5f);
+	glClear(GL_COLOR_BUFFER_BIT);
 
+	controller->drawControlGraph();
+	controller->drawBezierCurve();
+
+	
 }
 void Canvas0::update(void) {
 }
