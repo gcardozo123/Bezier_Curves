@@ -24,6 +24,7 @@ public:
    virtual void update(void);
 
    void setController(Controller *controller);
+   
 private:
 	Controller *controller;
 
@@ -148,6 +149,16 @@ private:
 	Controller *controller;
 
 
+};
+
+class ButtonClear : public scv::Button {
+public:
+	ButtonClear(scv::Point p1, scv::Point p2, std::string str);
+
+	virtual void onMouseClick(const scv::MouseEvent &evt);
+	void setController(Controller *controller);
+private:
+	Controller *controller;
 };
 
 class Label0 : public scv::Label {

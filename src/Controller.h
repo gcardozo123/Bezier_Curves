@@ -1,4 +1,6 @@
 #pragma once
+#include <glm\vec2.hpp>
+#include <vector>
 
 class Canvas0;
 class CheckBoxControlPoints;
@@ -7,6 +9,7 @@ class CheckBoxL2;
 class CheckBoxL3;
 class ButtonAnimate;
 class TextField0;
+class ButtonClear;
 
 class Controller
 {
@@ -22,6 +25,12 @@ public:
 	void setCheckBoxL3(CheckBoxL3 *checkBoxL3);
 	void setButtonAnimate(ButtonAnimate *buttonAnimate);
 	void setTextField0(TextField0 *textField0);
+	void setButtonClear(ButtonClear *buttonclear);
+
+	void canvasOnMouseClick(float x, float y);
+	void buttonClearPressed();
+	void drawControlGraph();
+	
 
 private:
 	Canvas0 *canvas0;
@@ -31,5 +40,9 @@ private:
 	CheckBoxL3 *checkBoxL3;
 	ButtonAnimate *buttonAnimate;
 	TextField0 *textField0;
+	ButtonClear *buttonClear;
+
+	std::vector<glm::vec2> controlPoints;
+
 };
 

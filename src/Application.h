@@ -27,6 +27,7 @@ public:
    virtual void onSizeChange(void);
    virtual void onPositionChange(void);
    ///////////////////////////////////////////////////////////
+   Controller *controller;
 
 protected:
    static const int s_defaultWindowWidth = 1280;

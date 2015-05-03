@@ -13,6 +13,9 @@
     <ClCompile Include="src\Controller.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\BezierCurve.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Application.h">
@@ -22,6 +25,9 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="src\Controller.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BezierCurve.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>

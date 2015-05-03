@@ -1,8 +1,11 @@
 #include "Controller.h"
 #include "Widget.h"
+#include <glm\vec2.hpp>
+#include <vector>
 
 Controller::Controller()
 {
+
 }
 
 
@@ -38,5 +41,37 @@ void Controller::setButtonAnimate(ButtonAnimate *buttonAnimate){
 void Controller::setTextField0(TextField0 *textField0){
 	this->textField0 = textField0;
 }
+void Controller::setButtonClear(ButtonClear *buttonClear){
+	this->buttonClear = buttonClear;
+}
 
+void Controller::canvasOnMouseClick(float x, float y){
+	glm::vec2 p(x, y);
+	
+	this->controlPoints.push_back(p);
+	//std::cout << x << " , " << y << std::endl;
+}
 
+void Controller::buttonClearPressed(){
+	controlPoints.clear();
+}
+
+void Controller::drawControlGraph(){
+	if (controlPoints.size() >= 2){
+
+		for(int i = 0; i < controlPoints.size(); i++)
+		{
+			if (i + 1 < controlPoints.size()){
+				float x1 = controlPoints.at(i).x;
+				float y1 = controlPoints.at(i).y;
+
+				float x2 = controlPoints.at(i + 1).x;
+				float y2 = controlPoints.at(i + 1).y;
+
+				canvas0->linef(x1, y1, x2, y2);
+			}
+		}
+
+	}
+	
+}

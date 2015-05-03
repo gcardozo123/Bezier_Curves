@@ -1,9 +1,15 @@
 #include "widget.h"
 #include "Controller.h"
+#include <glm\vec2.hpp>
+#include <vector>
+
 Canvas0::Canvas0(scv::Point p1, scv::Point p2) : scv::Canvas(p1, p2) {
 }
 //Canvas0
 void Canvas0::onMouseClick(const scv::MouseEvent &evt) {
+	scv::Point p = evt.getPosition();
+	controller->canvasOnMouseClick((float)p.x, (float)p.y);
+
 }
 void Canvas0::onMouseHold(const scv::MouseEvent &evt) {
 }
@@ -22,12 +28,17 @@ void Canvas0::onSizeChange(void) {
 void Canvas0::onPositionChange(void) {
 }
 void Canvas0::render(void) {
+	color(.0f, .0f, .0f);
+	controller->drawControlGraph();
+	// line(scv::Point(0, 0), scv::Point(500, 500));
+
 }
 void Canvas0::update(void) {
 }
 void Canvas0::setController(Controller *controller){
 	this->controller = controller;
 }
+
 
 //CheckBox0
 CheckBoxControlPoints::CheckBoxControlPoints(scv::Point p, bool state, const std::string str) : scv::CheckBox(p, state, str) {
@@ -161,6 +172,18 @@ void ButtonAnimate::onPositionChange(void) {
 void ButtonAnimate::setController(Controller *controller){
 	this->controller = controller;
 }
+
+//Button0
+ButtonClear::ButtonClear(scv::Point p1, scv::Point p2, std::string str) : scv::Button(p1, p2, str) {
+}
+void ButtonClear::onMouseClick(const scv::MouseEvent &evt) {
+	controller->buttonClearPressed();
+}
+void ButtonClear::setController(Controller *controller){
+	this->controller = controller;
+}
+
+
 
 //Label0
 Label0::Label0(scv::Point p1, scv::Point p2, std::string str) : scv::Label(p1, p2, str) {
