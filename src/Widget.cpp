@@ -4,6 +4,7 @@
 #include <vector>
 
 Canvas0::Canvas0(scv::Point p1, scv::Point p2) : scv::Canvas(p1, p2) {
+	areSegmentsReady = false;
 }
 //Canvas0
 void Canvas0::onMouseClick(const scv::MouseEvent &evt) {
@@ -32,7 +33,8 @@ void Canvas0::render(void) {
 	glClear(GL_COLOR_BUFFER_BIT);
 
 	controller->drawControlGraph();
-	controller->drawBezierCurve();
+	if (areSegmentsReady)
+		controller->drawBezierCurve();
 
 	
 }
@@ -151,32 +153,19 @@ void CheckBoxL3::setController(Controller *controller){
 	this->controller = controller;
 }
 
-//Button0
+//ButtonAnimate
 ButtonAnimate::ButtonAnimate(scv::Point p1, scv::Point p2, std::string str) : scv::Button(p1, p2, str) {
 }
 void ButtonAnimate::onMouseClick(const scv::MouseEvent &evt) {
-}
-void ButtonAnimate::onMouseHold(const scv::MouseEvent &evt) {
-}
-void ButtonAnimate::onMouseOver(const scv::MouseEvent &evt) {
-}
-void ButtonAnimate::onMouseUp(const scv::MouseEvent &evt) {
-}
-void ButtonAnimate::onMouseWheel(const scv::MouseEvent &evt) {
-}
-void ButtonAnimate::onKey(const scv::KeyEvent &evt) {
-}
-void ButtonAnimate::onChar(const unsigned int &character, const int &modifier) {
-}
-void ButtonAnimate::onSizeChange(void) {
-}
-void ButtonAnimate::onPositionChange(void) {
+	controller->bezierPathPoints();
+	controller->bezierPathPoints();
+	
 }
 void ButtonAnimate::setController(Controller *controller){
 	this->controller = controller;
 }
 
-//Button0
+//ButtonClear
 ButtonClear::ButtonClear(scv::Point p1, scv::Point p2, std::string str) : scv::Button(p1, p2, str) {
 }
 void ButtonClear::onMouseClick(const scv::MouseEvent &evt) {

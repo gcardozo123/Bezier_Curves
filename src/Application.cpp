@@ -44,7 +44,7 @@ void Application::init(void) {
    controller->setCheckBoxL3(checkBoxL3);
    checkBoxL3->setController(controller);
 
-   ButtonAnimate *buttonAnimate = new ButtonAnimate(scv::Point(23,14), scv::Point(110, 79), "Animate");
+   ButtonAnimate *buttonAnimate = new ButtonAnimate(scv::Point(23,14), scv::Point(110, 79), "Draw");
    addComponent(buttonAnimate);
    controller->setButtonAnimate(buttonAnimate);
    buttonAnimate->setController(controller);

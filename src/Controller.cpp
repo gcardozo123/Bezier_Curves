@@ -54,6 +54,7 @@ void Controller::canvasOnMouseClick(float x, float y){
 void Controller::buttonClearPressed(){
 	bezierObj->controlPoints.clear();
 	bezierObj->bezierSegments.clear();
+	canvas0->areSegmentsReady = false;
 }
 
 void Controller::drawControlGraph(){
@@ -78,7 +79,7 @@ void Controller::drawControlGraph(){
 
 	}
 }
-
+/*
 void Controller::drawBezierCurve(){
 	canvas0->color(0.9f, 0.9f, 0.0f);
 	
@@ -97,4 +98,49 @@ void Controller::drawBezierCurve(){
 			p0 = p1;
 		}
 	}
+}
+*/
+void Controller::bezierPathPoints(){
+	bezierObj->bezierSegments.clear(); //so we don't keep adding segments indefinitely
+	if (bezierObj->controlPoints.size() >= 4)
+	{
+		for (int i = 0; i < bezierObj->controlPoints.size() - 3; i += 3)
+		{
+			glm::vec2 p0 = bezierObj->controlPoints.at(i);
+			glm::vec2 p1 = bezierObj->controlPoints.at(i + 1);
+			glm::vec2 p2 = bezierObj->controlPoints.at(i + 2);
+			glm::vec2 p3 = bezierObj->controlPoints.at(i + 3);
+
+			if (i == 0){ //if i!=0 the point is the same as the previous segment
+				bezierObj->bezierSegments.push_back(bezierObj->cubicBezier(p0, p1, p2, p3, 0));
+			}
+
+			for (int j = 0; j < 100; j++)
+			{
+				float t = j / (float)100;
+				bezierObj->bezierSegments.push_back(bezierObj->cubicBezier(p0, p1, p2, p3, t));
+			}
+		}
+
+		canvas0->areSegmentsReady = true;
+	}
+}
+
+void Controller::drawBezierCurve(){
+	canvas0->color(0.9f, 0.0f, 0.0f);
+
+	if (bezierObj->controlPoints.size() >= 4){
+		
+		glm::vec2 p0 = bezierObj->bezierSegments.at(0);
+
+		for (int i = 1; i < bezierObj->bezierSegments.size(); i++)
+		{
+			glm::vec2 p1 = bezierObj->bezierSegments.at(i);	
+			canvas0->circleFillf(p1.x, p1.y, 1, 6);
+			canvas0->linef(p0.x, p0.y, p1.x, p1.y);
+			
+			p0 = p1;
+		}
+	}
+
 }

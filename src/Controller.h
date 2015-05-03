@@ -33,6 +33,8 @@ public:
 	void canvasOnMouseClick(float x, float y);
 	void buttonClearPressed();
 	void drawControlGraph();
+	//void drawBezierCurve();
+	void bezierPathPoints();
 	void drawBezierCurve();
 
 private:
@@ -46,6 +48,7 @@ private:
 	ButtonClear *buttonClear;
 
 	BezierCurve *bezierObj;
+
 
 };
 
